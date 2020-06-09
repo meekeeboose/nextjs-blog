@@ -1,0 +1,23 @@
+import Link from 'next/link';
+import Head from 'next/head';
+
+export default function FirstPost() {
+  return (
+    <>
+      <Head>
+        <title>First Post</title>
+      </Head>
+      <h1>First Post</h1>
+      <h2>
+        <Link href="/">
+          <a>Back to home</a>
+        </Link>
+        <h4>
+          <a href="https://google.com" target="_blank">
+            Search Google
+          </a>
+        </h4>
+      </h2>
+    </>
+  );
+}
